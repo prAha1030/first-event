@@ -1,19 +1,35 @@
 package com.firstevent.domain.member;
 
-import lombok.AccessLevel;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.NaturalId;
 
 import java.time.LocalDateTime;
 
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Entity
+@Table(uniqueConstraints = {@UniqueConstraint(name = "uk_member_email", columnNames = {"email"})})
+@NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 public class Member {
+    // 멤버 식별자, 이메일, 비밀번호, 이름, 상태, 역할, 가입일
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(unique = true, length = 100, nullable = false)
+    @NaturalId
     private String email;
+    @Column(nullable = false, length = 150)
     private String password;
+    @Column(nullable = false, length = 50)
     private String nickname;
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     private MemberStatus status;
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     private MemberRole role;
+    @Column(nullable = false)
     private LocalDateTime registAt;
 
     public Member(String email, String password, String nickname, PasswordEncoder passwordEncoder) {
