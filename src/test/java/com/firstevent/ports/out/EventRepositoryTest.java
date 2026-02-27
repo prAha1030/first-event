@@ -1,6 +1,6 @@
 package com.firstevent.ports.out;
 
-import jakarta.persistence.EntityManager;
+import com.firstevent.application.ports.out.EventRepository;import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

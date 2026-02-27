@@ -1,5 +1,6 @@
 package com.firstevent.ports.in;
 
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

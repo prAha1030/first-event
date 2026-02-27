@@ -1,5 +1,9 @@
 package com.firstevent.ports.in;
 
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
+import com.firstevent.application.ports.in.EventGetUseCase;
+import com.firstevent.application.ports.in.EventManageUseCase;
+import com.firstevent.application.ports.in.MemberManageUseCase;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
