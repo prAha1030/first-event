@@ -1,5 +1,6 @@
 package com.firstevent.domain.event;
 
-public interface Determination {
+public interface Determinator {
+
     boolean determinate();
 }

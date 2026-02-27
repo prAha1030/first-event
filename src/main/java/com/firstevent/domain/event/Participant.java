@@ -1,9 +1,9 @@
 package com.firstevent.domain.event;
 
-import com.firstevent.domain.member.Member;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import sparta.firstevent.domain.member.Member;
 
 import java.time.LocalDateTime;
 
@@ -12,25 +12,29 @@ import java.time.LocalDateTime;
 @Table(uniqueConstraints = {@UniqueConstraint(name = "uk_participant_event", columnNames = {"memberId", "eventId"})})
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 public class Participant {
-    // 참여 식별자, 멤버, 이벤트, 당첨, 참여일
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(nullable = false)
     private Long memberId;
-    @Column(nullable = false, insertable = false, updatable = false)
+
+    @Column(name="event_id")
     private Long eventId;
+
     @Column(nullable = false)
     private boolean isWinner;
+
     @Column(nullable = false)
     private LocalDateTime participateAt;
 
-    public static Participant regist(Member member, Event event, Determination determination) {
+    public static Participant regist(Long memberId, Long eventId, Determinator determinator) {
         Participant participant = new Participant();
 
-        participant.memberId = member.getId();
-        participant.eventId = event.getId();
-        participant.isWinner = determination.determinate();
+        participant.memberId = memberId;
+        participant.eventId = eventId;
+        participant.isWinner = determinator.determinate();
         participant.participateAt = LocalDateTime.now();
 
         return participant;
