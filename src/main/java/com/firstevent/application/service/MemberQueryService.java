@@ -1,10 +1,10 @@
 package com.firstevent.application.service;
 
+import com.firstevent.application.ports.in.MemberGetUseCase;
+import com.firstevent.application.ports.out.MemberRepository;
+import com.firstevent.domain.member.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import sparta.firstevent.application.ports.in.MemberGetUseCase;
-import sparta.firstevent.application.ports.out.MemberRepository;
-import sparta.firstevent.domain.member.Member;
 
 import java.util.List;
 

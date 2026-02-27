@@ -1,8 +1,8 @@
 package com.firstevent.adapter.dto;
 
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventStatus;
 
 public record EventResponseDto(
     @Schema(description = "이벤트 아이디", example = "1")

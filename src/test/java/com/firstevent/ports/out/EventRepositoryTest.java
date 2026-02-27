@@ -4,8 +4,8 @@ import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventFixture;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventFixture;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

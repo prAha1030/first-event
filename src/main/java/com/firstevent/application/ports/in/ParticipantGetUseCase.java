@@ -1,9 +1,9 @@
 package com.firstevent.application.ports.in;
 
+import com.firstevent.adapter.dto.CursorPage;
+import com.firstevent.domain.event.Participant;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import sparta.firstevent.adapter.dto.CursorPage;
-import sparta.firstevent.domain.event.Participant;
 
 public interface ParticipantGetUseCase {
     Long countWinner(Long eventId);

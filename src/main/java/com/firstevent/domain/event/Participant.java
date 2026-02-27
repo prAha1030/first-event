@@ -3,7 +3,6 @@ package com.firstevent.domain.event;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import sparta.firstevent.domain.member.Member;
 
 import java.time.LocalDateTime;
 

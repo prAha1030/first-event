@@ -1,12 +1,11 @@
 package com.firstevent.application.ports.out;
 
-import org.springframework.data.domain.Page;
+import com.firstevent.application.ports.out.projections.ParticipantProjection;
+import com.firstevent.domain.event.Participant;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.query.Param;
-import sparta.firstevent.application.ports.out.projections.ParticipantProjection;
-import sparta.firstevent.domain.event.Participant;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package com.firstevent.adapter.api.docs;
 
+import com.firstevent.adapter.dto.ApiErrResponse;
+import com.firstevent.adapter.dto.EventResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -9,8 +11,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.PathVariable;
-import sparta.firstevent.adapter.dto.ApiErrResponse;
-import sparta.firstevent.adapter.dto.EventResponseDto;
 
 @Tag(name = "사용자 이벤트", description = "사용자 이벤트 관련 APIs")
 public interface EventApi {

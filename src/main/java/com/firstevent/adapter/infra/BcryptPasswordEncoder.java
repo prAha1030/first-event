@@ -1,8 +1,8 @@
 package com.firstevent.adapter.infra;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
+import com.firstevent.domain.member.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import sparta.firstevent.domain.member.PasswordEncoder;
 
 @Component
 public class BcryptPasswordEncoder implements PasswordEncoder {

@@ -1,7 +1,7 @@
 package com.firstevent.application.ports.out;
 
+import com.firstevent.domain.member.Member;
 import org.springframework.data.repository.Repository;
-import sparta.firstevent.domain.member.Member;
 
 import java.util.List;
 import java.util.Optional;

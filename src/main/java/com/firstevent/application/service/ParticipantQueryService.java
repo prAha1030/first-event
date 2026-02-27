@@ -1,18 +1,18 @@
 package com.firstevent.application.service;
 
+import com.firstevent.adapter.dto.CursorPage;
+import com.firstevent.application.ports.in.ParticipantGetUseCase;
+import com.firstevent.application.ports.out.EventParticipantCountRepository;
+import com.firstevent.application.ports.out.ParticipantRepository;
+import com.firstevent.application.ports.out.projections.ParticipantProjection;
+import com.firstevent.domain.event.EventParticipantCount;
+import com.firstevent.domain.event.Participant;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.CursorPage;
-import sparta.firstevent.application.ports.in.ParticipantGetUseCase;
-import sparta.firstevent.application.ports.out.EventParticipantCountRepository;
-import sparta.firstevent.application.ports.out.projections.ParticipantProjection;
-import sparta.firstevent.application.ports.out.ParticipantRepository;
-import sparta.firstevent.domain.event.EventParticipantCount;
-import sparta.firstevent.domain.event.Participant;
 
 import java.util.List;
 import java.util.Map;

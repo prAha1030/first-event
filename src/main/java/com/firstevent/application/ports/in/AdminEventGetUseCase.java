@@ -1,9 +1,9 @@
 package com.firstevent.application.ports.in;
 
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.Participant;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.Participant;
 
 import java.util.List;
 
