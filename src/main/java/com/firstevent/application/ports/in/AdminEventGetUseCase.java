@@ -3,12 +3,16 @@ package com.firstevent.application.ports.in;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventStatus;
+import sparta.firstevent.domain.event.Participant;
 
-public interface EventGetUseCase {
+import java.util.List;
+
+public interface AdminEventGetUseCase {
     Page<Event> getAll(Pageable pageable);
 
     Event get(Long id);
 
-    Event getWithStatus(Long id, EventStatus status);
+//    Page<Participant> getParticipants(Long eventId, Pageable pageable);
+
+    List<Participant> getWinners(Long eventId);
 }
