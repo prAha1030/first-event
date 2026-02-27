@@ -1,7 +1,7 @@
 package com.firstevent.application.ports.in;
 
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.domain.event.Event;
+import com.firstevent.adapter.dto.EventRequestDto;
+import com.firstevent.domain.event.Event;
 
 public interface AdminEventManageUseCase {
 

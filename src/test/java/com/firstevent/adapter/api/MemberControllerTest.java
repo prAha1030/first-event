@@ -10,11 +10,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.assertj.MockMvcTester;
 import org.springframework.test.web.servlet.assertj.MvcTestResult;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
-import sparta.firstevent.adapter.dto.MemberResponseDto;
-import sparta.firstevent.application.ports.in.MemberManageUseCase;
-import sparta.firstevent.application.ports.out.MemberRepository;
-import sparta.firstevent.domain.member.MemberFixture;
+import com.firstevent.adapter.dto.MemberRequestDto;
+import com.firstevent.adapter.dto.MemberResponseDto;
+import com.firstevent.application.ports.in.MemberManageUseCase;
+import com.firstevent.application.ports.out.MemberRepository;
+import com.firstevent.domain.member.MemberFixture;
 
 import java.io.UnsupportedEncodingException;
 

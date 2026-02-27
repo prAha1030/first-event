@@ -1,13 +1,14 @@
 package com.firstevent.ports.in;
 
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventFixture;
-import sparta.firstevent.domain.event.EventStatus;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventFixture;
+import com.firstevent.domain.event.EventStatus;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

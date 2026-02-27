@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.application.ports.out.MemberRepository;
-import sparta.firstevent.domain.member.Member;
-import sparta.firstevent.domain.member.MemberFixture;
-import sparta.firstevent.domain.member.MemberStatus;
+import com.firstevent.application.ports.out.MemberRepository;
+import com.firstevent.domain.member.Member;
+import com.firstevent.domain.member.MemberFixture;
+import com.firstevent.domain.member.MemberStatus;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

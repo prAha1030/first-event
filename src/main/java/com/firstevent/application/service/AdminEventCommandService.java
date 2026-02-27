@@ -1,14 +1,14 @@
 package com.firstevent.application.service;
 
+import com.firstevent.adapter.dto.EventRequestDto;
+import com.firstevent.application.ports.in.AdminEventGetUseCase;
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
+import com.firstevent.application.ports.out.EventRepository;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.application.ports.in.AdminEventGetUseCase;
-import sparta.firstevent.application.ports.in.AdminEventManageUseCase;
-import sparta.firstevent.application.ports.out.EventRepository;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventStatus;
 
 @Service
 @Transactional

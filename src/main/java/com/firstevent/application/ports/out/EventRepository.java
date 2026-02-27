@@ -1,15 +1,11 @@
 package com.firstevent.application.ports.out;
 
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
-import org.springframework.data.repository.query.Param;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventStatus;
-import sparta.firstevent.domain.event.Participant;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface EventRepository extends Repository<Event, Long> {

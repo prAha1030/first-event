@@ -9,16 +9,16 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
-import sparta.firstevent.application.ports.out.EventRepository;
-import sparta.firstevent.application.ports.out.MemberRepository;
-import sparta.firstevent.application.ports.out.ParticipantRepository;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventFixture;
-import sparta.firstevent.domain.event.Participant;
-import sparta.firstevent.domain.member.Member;
-import sparta.firstevent.domain.member.MemberFixture;
+import com.firstevent.adapter.dto.EventRequestDto;
+import com.firstevent.adapter.dto.MemberRequestDto;
+import com.firstevent.application.ports.out.EventRepository;
+import com.firstevent.application.ports.out.MemberRepository;
+import com.firstevent.application.ports.out.ParticipantRepository;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventFixture;
+import com.firstevent.domain.event.Participant;
+import com.firstevent.domain.member.Member;
+import com.firstevent.domain.member.MemberFixture;
 
 import java.util.List;
 

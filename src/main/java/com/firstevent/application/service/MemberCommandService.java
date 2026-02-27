@@ -1,14 +1,14 @@
 package com.firstevent.application.service;
 
+import com.firstevent.adapter.dto.MemberRequestDto;
+import com.firstevent.application.ports.in.MemberGetUseCase;
+import com.firstevent.application.ports.in.MemberManageUseCase;
+import com.firstevent.application.ports.out.MemberRepository;
+import com.firstevent.domain.member.Member;
+import com.firstevent.domain.member.PasswordEncoder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
-import sparta.firstevent.application.ports.in.MemberGetUseCase;
-import sparta.firstevent.application.ports.in.MemberManageUseCase;
-import sparta.firstevent.application.ports.out.MemberRepository;
-import sparta.firstevent.domain.member.Member;
-import sparta.firstevent.domain.member.PasswordEncoder;
 
 @Service
 @Transactional

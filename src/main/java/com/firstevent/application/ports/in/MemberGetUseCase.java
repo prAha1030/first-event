@@ -1,6 +1,6 @@
 package com.firstevent.application.ports.in;
 
-import sparta.firstevent.domain.member.Member;
+import com.firstevent.domain.member.Member;
 
 import java.util.List;
 

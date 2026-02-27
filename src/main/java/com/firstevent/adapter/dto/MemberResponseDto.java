@@ -1,6 +1,6 @@
 package com.firstevent.adapter.dto;
 
-import sparta.firstevent.domain.member.Member;
+import com.firstevent.domain.member.Member;
 
 public record MemberResponseDto (
     Long id, String nickname

@@ -1,5 +1,14 @@
 package com.firstevent.adapter.api;
 
+import com.firstevent.adapter.dto.CursorPage;
+import com.firstevent.adapter.dto.EventRequestDto;
+import com.firstevent.adapter.dto.EventResponseDto;
+import com.firstevent.adapter.dto.ParticipantResponseDto;
+import com.firstevent.application.ports.in.AdminEventGetUseCase;
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
+import com.firstevent.application.ports.in.ParticipantGetUseCase;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.Participant;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -7,15 +16,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import sparta.firstevent.adapter.dto.CursorPage;
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.adapter.dto.EventResponseDto;
-import sparta.firstevent.adapter.dto.ParticipantResponseDto;
-import sparta.firstevent.application.ports.in.AdminEventGetUseCase;
-import sparta.firstevent.application.ports.in.AdminEventManageUseCase;
-import sparta.firstevent.application.ports.in.ParticipantGetUseCase;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.Participant;
 
 @RequestMapping("/api/admin/events")
 @RestController

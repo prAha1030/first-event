@@ -1,13 +1,13 @@
 package com.firstevent.adapter.api;
 
+import com.firstevent.adapter.dto.MemberRequestDto;
+import com.firstevent.adapter.dto.MemberResponseDto;
+import com.firstevent.application.ports.in.MemberGetUseCase;
+import com.firstevent.application.ports.in.MemberManageUseCase;
+import com.firstevent.domain.member.Member;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
-import sparta.firstevent.adapter.dto.MemberResponseDto;
-import sparta.firstevent.application.ports.in.MemberGetUseCase;
-import sparta.firstevent.application.ports.in.MemberManageUseCase;
-import sparta.firstevent.domain.member.Member;
 
 @RestController
 @RequiredArgsConstructor

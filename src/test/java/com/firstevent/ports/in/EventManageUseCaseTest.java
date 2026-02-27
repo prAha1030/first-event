@@ -1,18 +1,22 @@
 package com.firstevent.ports.in;
 
+import com.firstevent.application.ports.in.AdminEventManageUseCase;
+import com.firstevent.application.ports.in.EventGetUseCase;
+import com.firstevent.application.ports.in.EventManageUseCase;
+import com.firstevent.application.ports.in.MemberManageUseCase;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
-import sparta.firstevent.application.ports.out.EventRepository;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventFixture;
-import sparta.firstevent.domain.member.Member;
-import sparta.firstevent.domain.member.MemberFixture;
+import com.firstevent.adapter.dto.EventRequestDto;
+import com.firstevent.adapter.dto.MemberRequestDto;
+import com.firstevent.application.ports.out.EventRepository;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventFixture;
+import com.firstevent.domain.member.Member;
+import com.firstevent.domain.member.MemberFixture;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

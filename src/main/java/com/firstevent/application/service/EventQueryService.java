@@ -1,13 +1,13 @@
 package com.firstevent.application.service;
 
+import com.firstevent.application.ports.in.EventGetUseCase;
+import com.firstevent.application.ports.out.EventRepository;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import sparta.firstevent.application.ports.in.EventGetUseCase;
-import sparta.firstevent.application.ports.out.EventRepository;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventStatus;
 
 @Service
 @RequiredArgsConstructor

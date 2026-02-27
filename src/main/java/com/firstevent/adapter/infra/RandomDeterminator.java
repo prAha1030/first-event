@@ -1,7 +1,7 @@
 package com.firstevent.adapter.infra;
 
+import com.firstevent.domain.event.Determinator;
 import org.springframework.stereotype.Component;
-import sparta.firstevent.domain.event.Determinator;
 
 import java.util.concurrent.ThreadLocalRandom;
 

@@ -1,12 +1,12 @@
 package com.firstevent.application.ports.out;
 
+import com.firstevent.domain.event.EventParticipantCount;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.query.Param;
-import sparta.firstevent.domain.event.EventParticipantCount;
 
 import java.util.Optional;
 

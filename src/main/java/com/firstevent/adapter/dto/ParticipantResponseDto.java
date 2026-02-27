@@ -1,6 +1,6 @@
 package com.firstevent.adapter.dto;
 
-import sparta.firstevent.domain.event.Participant;
+import com.firstevent.domain.event.Participant;
 
 import java.time.LocalDateTime;
 

@@ -1,14 +1,11 @@
 package com.firstevent.domain.event;
 
+import com.firstevent.adapter.dto.EventRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import sparta.firstevent.adapter.dto.EventRequestDto;
-import sparta.firstevent.domain.member.Member;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Getter

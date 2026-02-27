@@ -8,9 +8,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
-import sparta.firstevent.domain.event.Event;
-import sparta.firstevent.domain.event.EventFixture;
-import sparta.firstevent.domain.event.EventStatus;
+import com.firstevent.domain.event.Event;
+import com.firstevent.domain.event.EventFixture;
+import com.firstevent.domain.event.EventStatus;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,22 +1,15 @@
 package com.firstevent.adapter.api;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.tags.Tag;
+import com.firstevent.adapter.api.docs.EventApi;
+import com.firstevent.adapter.dto.EventResponseDto;
+import com.firstevent.adapter.dto.ParticipantResponseDto;
+import com.firstevent.application.ports.in.EventGetUseCase;
+import com.firstevent.application.ports.in.ParticipantManageUseCase;
+import com.firstevent.domain.event.Event;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
-import sparta.firstevent.adapter.api.docs.EventApi;
-import sparta.firstevent.adapter.dto.ApiErrResponse;
-import sparta.firstevent.adapter.dto.EventResponseDto;
-import sparta.firstevent.adapter.dto.ParticipantResponseDto;
-import sparta.firstevent.application.ports.in.EventGetUseCase;
-import sparta.firstevent.application.ports.in.ParticipantManageUseCase;
-import sparta.firstevent.domain.event.Event;
 
 @RestController
 @RequiredArgsConstructor

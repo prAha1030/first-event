@@ -1,10 +1,10 @@
 package com.firstevent.domain.member;
 
+import com.firstevent.adapter.dto.MemberRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalId;
-import sparta.firstevent.adapter.dto.MemberRequestDto;
 
 import java.time.LocalDateTime;
 

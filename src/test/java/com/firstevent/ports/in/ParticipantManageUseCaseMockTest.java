@@ -7,10 +7,10 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.util.ReflectionTestUtils;
-import sparta.firstevent.application.ports.out.EventParticipantCountRepository;
-import sparta.firstevent.application.ports.out.ParticipantRepository;
-import sparta.firstevent.application.service.ParticipantCommandService;
-import sparta.firstevent.domain.event.*;
+import com.firstevent.application.ports.out.EventParticipantCountRepository;
+import com.firstevent.application.ports.out.ParticipantRepository;
+import com.firstevent.application.service.ParticipantCommandService;
+import com.firstevent.domain.event.*;
 
 import java.util.Optional;
 

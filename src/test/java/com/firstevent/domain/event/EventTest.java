@@ -3,8 +3,8 @@ package com.firstevent.domain.event;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import sparta.firstevent.domain.member.Member;
-import sparta.firstevent.domain.member.MemberFixture;
+import com.firstevent.domain.member.Member;
+import com.firstevent.domain.member.MemberFixture;
 
 import java.time.LocalDateTime;
 
